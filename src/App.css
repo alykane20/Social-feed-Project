@@ -1,0 +1,12 @@
+.border-box {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 12px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.main-background{
+    background-color: rgb(216, 243, 234);
+}

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost/CreatePost';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
+import NavBar from './Components/NavBar/NavBar';
+import './App.css';
 
 
 function App() {
 
-  const [posts, setPosts] = useState([{name: 'Test', post: 'Does this work?'}])
+  const [posts, setPosts] = useState([{name: '', post: ''}])
 
   function addNewPost(post){
     let tempPosts = [...posts, post];
@@ -14,16 +16,16 @@ function App() {
 
 
   return (
-    <div>
-     <h3>SocialFeed</h3>
-        <div>
+    <div className='main-background'>
+     <div> 
+        <NavBar />
+     </div>  
+        <div className='border-box'>
          <CreatePost createNewPost={addNewPost} />
         </div>
-        <div>
+        <div className='border-box'>
           <DisplayPosts parentPosts={posts}/>
         </div>
-  
-      
     </div>
   );
 }

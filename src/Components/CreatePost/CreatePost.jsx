@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CreatePost.css'
 
 
 
@@ -20,11 +21,11 @@ function handleSubmit(event) {
         <form onSubmit={handleSubmit} className="form-group">
             <div>
                 <label>Name</label>
-                <input type="text"  value={name} onChange={(event) => setName(event.target.value)}/>
+                <input type="text" className='name-box' value={name} onChange={(event) => setName(event.target.value)}/>
             </div>
             <div>
                 <label>Post</label>
-                <input type="text" value={post} onChange={(event) => setPost(event.target.value)}/>
+                <input type="text" className='post-box' value={post} onChange={(event) => setPost(event.target.value)}/>
             </div>
             <button type='submit' className='button'>Create</button>
         </form>

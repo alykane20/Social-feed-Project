@@ -24,7 +24,6 @@ const PostFormat = (props) => {
             
     return (
         
-           /* FROM THE CREATEPOST FILE BRING IN NAME AND POST, SO IT CAN ALL BE IN ONE FORM */
             <div>
                 <button className={likeButtonClass} onClick={handleLikeClick}>Like</button>
                 <button className={dislikeButtonClass} onClick={handleDislikeClick}>Dislike</button>

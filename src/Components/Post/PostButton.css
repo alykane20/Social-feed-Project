@@ -1,13 +1,18 @@
 
-
 .inactive{
-    background-color: rgb(243, 110, 243) ;
+    background-color: rgba(231, 227, 231, 0.963);
+    border-radius: 12px;
+    margin: 2px;
 }
 
 .likeActive{
     background-color: lawngreen;
+    border-radius: 12px;
+    margin: 2px;
 }
 
 .dislikeActive{
     background-color: crimson;
+    border-radius: 12px;
+    margin: 2px;
 }
