@@ -17,7 +17,7 @@ function handleSubmit(event) {
 }
 
     return (  
-        <form onSubmit={handleSubmit} >
+        <form onSubmit={handleSubmit} className="form-group">
             <div>
                 <label>Name</label>
                 <input type="text"  value={name} onChange={(event) => setName(event.target.value)}/>
@@ -26,7 +26,7 @@ function handleSubmit(event) {
                 <label>Post</label>
                 <input type="text" value={post} onChange={(event) => setPost(event.target.value)}/>
             </div>
-            <button type='submit'>Create</button>
+            <button type='submit' className='button'>Create</button>
         </form>
     );
 }

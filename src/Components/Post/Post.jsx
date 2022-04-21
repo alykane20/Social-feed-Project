@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './PostButton.css'
 
+
 const PostFormat = (props) => {
     
     const [likeButtonClass, setLikeButtonClass] = useState ("inactive");
@@ -22,10 +23,13 @@ const PostFormat = (props) => {
             }}  
             
     return (
-        <div>
-            <button className={likeButtonClass} onClick={handleLikeClick}>Like</button>
-            <button className={dislikeButtonClass} onClick={handleDislikeClick}>Dislike</button>
-        </div>
+        
+           /* FROM THE CREATEPOST FILE BRING IN NAME AND POST, SO IT CAN ALL BE IN ONE FORM */
+            <div>
+                <button className={likeButtonClass} onClick={handleLikeClick}>Like</button>
+                <button className={dislikeButtonClass} onClick={handleDislikeClick}>Dislike</button>
+            </div>
+        
       );
 
 }

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost/CreatePost';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
-import Post from './Components/Post/Post'
+
 
 function App() {
 
-  const [posts, setPosts] = useState([{name: 'Aly', post: 'Does this work?'}])
+  const [posts, setPosts] = useState([{name: 'Test', post: 'Does this work?'}])
 
   function addNewPost(post){
     let tempPosts = [...posts, post];
@@ -18,9 +18,6 @@ function App() {
      <h3>SocialFeed</h3>
         <div>
          <CreatePost createNewPost={addNewPost} />
-        </div>
-        <div>
-          <Post />       
         </div>
         <div>
           <DisplayPosts parentPosts={posts}/>

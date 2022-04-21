@@ -1,3 +1,4 @@
+import PostFormat from "../Post/Post";
 
 const DisplayPosts = (props) => {
     return (
@@ -8,6 +9,7 @@ const DisplayPosts = (props) => {
             <tr key={index}>
               <td>{post.name}</td>
               <td>{post.post}</td>
+              <PostFormat />
             </tr>
           );
         })}
