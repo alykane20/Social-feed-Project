@@ -13,7 +13,6 @@ function handleSubmit(event) {
         name: name,
         post: post
     };
-    console.log(newPost)
     props.createNewPost(newPost)
 }
 
