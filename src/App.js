@@ -20,11 +20,13 @@ function App() {
      <div> 
         <NavBar />
      </div>  
+     <div className='col-md-12'>
         <div className='border-box'>
          <CreatePost createNewPost={addNewPost} />
         </div>
         <div className='border-box'>
           <DisplayPosts parentPosts={posts}/>
+        </div>
         </div>
     </div>
   );

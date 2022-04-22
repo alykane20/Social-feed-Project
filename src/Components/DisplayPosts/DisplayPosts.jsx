@@ -1,16 +1,17 @@
 import PostFormat from "../Post/Post";
+import './DisplayPosts.css'
 
 const DisplayPosts = (props) => {
     return (
     <table>
-        <tbody>
+        <tbody >
           {props.parentPosts.map((post, index) =>{
           return (
-            <tr key={index}>
-              <td>{post.name}</td>
-              <td>{post.post}</td>
+            <div key={index} className='display'>
+              <div className='name'>{post.name}</div>
+              <div>{post.post}</div>
               <PostFormat />
-            </tr>
+            </div>
           );
         })}
         </tbody>

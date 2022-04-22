@@ -1,0 +1,10 @@
+.display{
+    border-bottom: solid;
+    border-bottom-width: thin; 
+    border-width: 100%;
+    
+}
+
+.name{
+    display: block;
+}

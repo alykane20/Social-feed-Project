@@ -9,14 +9,14 @@ const PostFormat = (props) => {
     
     function handleLikeClick() {
         if(likeButtonClass === "inactive"){
-            setLikeButtonClass("likeActive");
+            setLikeButtonClass("likeActive"); setDislikeButtonClass("inactive");
         }
         else {
-            setLikeButtonClass("inactive");
+            setLikeButtonClass("inactive"); setDislikeButtonClass("inactive")
         }}
     function handleDislikeClick() {
         if(dislikeButtonClass === "inactive"){
-            setDislikeButtonClass("dislikeActive");
+            setDislikeButtonClass("dislikeActive"); setLikeButtonClass("inactive")
             }
         else{
             setDislikeButtonClass("inactive");
