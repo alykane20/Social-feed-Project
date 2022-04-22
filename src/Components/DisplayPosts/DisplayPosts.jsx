@@ -1,16 +1,17 @@
 import PostFormat from "../Post/Post";
 import './DisplayPosts.css'
+import Datetime from "../AddDate/AddDate";
+
 
 const DisplayPosts = (props) => {
     return (
     <table>
         <tbody >
           {props.parentPosts.map((post, index) =>{
-            if(post.name == ' ' && post.post == ' '){
+            if(post.name === ' ' && post.post === ' '){
               return ' '
             }
-            // if the value of post.name == " "
-                // insdide of this try a blank return so return; or a break; and see what that does and repot back
+            
               else{
           return (
             <div key={index} className='display'>
@@ -19,7 +20,8 @@ const DisplayPosts = (props) => {
               <div className='like-dislike'>
                 <PostFormat />
               </div>
-            </div>
+                <Datetime />
+              </div>
           )};
         })}
         </tbody>
