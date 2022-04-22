@@ -1,10 +1,16 @@
 .display{
     border-bottom: solid;
     border-bottom-width: thin; 
-    border-width: 100%;
+    
     
 }
 
 .name{
     display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
+
+.like-dislike{
+    display: inline;
+  }
