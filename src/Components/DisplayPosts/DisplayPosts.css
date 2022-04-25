@@ -14,3 +14,7 @@
 .like-dislike{
     display: inline;
   }
+
+  .datetime{
+      color: blueviolet;
+  }

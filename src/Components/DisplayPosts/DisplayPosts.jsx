@@ -17,10 +17,12 @@ const DisplayPosts = (props) => {
             <div key={index} className='display'>
               <div className='name'>{post.name}</div>
               <div>{post.post}</div>
-              <div className='like-dislike'>
-                <PostFormat />
-              </div>
-                <Datetime />
+                <table>
+                  <tr>
+                    <td colspan="2"> <PostFormat /> </td>
+                    <td colspan="2"> <Datetime /></td>
+                </tr>    
+                </table>
               </div>
           )};
         })}
